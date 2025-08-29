@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arq. Sofía Castro - Diseño Arquitectónico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .animate-fade-in {
+            animation: fadeIn 1.5s ease-out forwards;
+            opacity: 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <main class="container mx-auto max-w-4xl px-6 py-16 md:py-24">
+
+        <!-- Header Section -->
+        <header class="text-center mb-16 animate-fade-in">
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">Arq. Sofía Castro</h1>
+            <p class="mt-3 text-lg text-gray-600">Arquitectura y Diseño • Cartago</p>
+            <p class="mt-4 max-w-2xl mx-auto text-base text-gray-500">
+                Diseño de planos arquitectónicos para proyectos residenciales y comerciales. Creatividad y funcionalidad se unen para dar vida a tus espacios.
+            </p>
+        </header>
+
+        <!-- Dynamic GIF Section -->
+        <section class="mb-16 animate-fade-in" style="animation-delay: 200ms;">
+            <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+                <!-- 
+                  INSTRUCCIÓN PARA TI, APOLLO:
+                  Crea tu GIF y guárdalo en la carpeta "images".
+                  Reemplaza el 'src' de abajo con la ruta a tu archivo. Ej: "images/sofia-castro.gif"
+                  El tamaño ideal para el GIF es de 1024x576 píxeles para mantener la proporción 16:9.
+                -->
+                <img src="images/curriculum1.gif" alt="Presentación Profesional de Arq. Sofía Castro" class="w-full h-auto">
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="mb-16 animate-fade-in" style="animation-delay: 400ms;">
+            <h2 class="text-2xl font-bold text-center mb-8 text-gray-800">Servicios</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-lg mb-2">Diseño Residencial</h3>
+                    <p class="text-gray-600 text-sm">Creación de hogares únicos y funcionales.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-lg mb-2">Proyectos Comerciales</h3>
+                    <p class="text-gray-600 text-sm">Espacios que potencian tu negocio.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-lg mb-2">Consultoría y Planos</h3>
+                    <p class="text-gray-600 text-sm">Asesoría experta para tus ideas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="text-center bg-white py-12 rounded-lg shadow-sm animate-fade-in" style="animation-delay: 600ms;">
+             <h2 class="text-2xl font-bold mb-4 text-gray-800">¿Listo para construir tu proyecto?</h2>
+             <p class="text-gray-600 mb-6">Contáctame para agendar una consulta inicial.</p>
+             <a href="mailto:sofia.castro@email.com" class="bg-blue-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-blue-700 transition-colors">
+                 Enviar un Correo
+             </a>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-8">
+        <p class="text-xs text-gray-500">&copy; 2024 Arq. Sofía Castro | Sitio creado por <a href="https://profcr.com" target="_blank" class="font-semibold hover:text-blue-600">ProfCR</a></p>
+    </footer>
+
+</body>
+</html>
